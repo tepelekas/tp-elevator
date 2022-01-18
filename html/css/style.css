@@ -1,0 +1,244 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background: none !important;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+button {
+    position: absolute;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.45);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 6.5vw;
+    left: 0vw;
+    top: 0vw;
+    transition: 0.25s;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+button:hover {
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.25s;
+}
+
+.mainContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    top: 22vw;
+    left: 1vw;
+    width: 20vw;
+    height: 30vw;
+    border: 2px solid;
+    border-color: rgba(255, 255, 255, 0.5)
+}
+
+.titleContainer {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 9.8vw;
+    height: 0.1vw;
+    top: 5vw;
+    left: 5vw;
+}
+
+.button_floor_down_1 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 5vw;
+    width: 5vw;
+    top: 7vw;
+    left: 1vw;
+    font-size: 1.5vw;
+    transition: all 0.25s ease-in-out;
+    border: solid 0.1vw;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.button_floor_down_1:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.button_floor_down_2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 5vw;
+    width: 5vw;
+    top: 13vw;
+    left: 1vw;
+    font-size: 1.5vw;
+    transition: all 0.25s ease-in-out;
+    border: solid 0.1vw;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.button_floor_down_2:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.button_floor_down_3 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 5vw;
+    width: 5vw;
+    top: 19vw;
+    left: 1vw;
+    font-size: 1.5vw;
+    transition: all 0.25s ease-in-out;
+    border: solid 0.1vw;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.button_floor_down_3:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.button_floor_up_2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 5vw;
+    width: 5vw;
+    top: 7vw;
+    left: 13.7vw;
+    font-size: 1.5vw;
+    transition: all 0.25s ease-in-out;
+    border: solid 0.1vw;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.button_floor_up_2:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.button_floor_up_3 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 5vw;
+    width: 5vw;
+    top: 13vw;
+    left: 13.7vw;
+    font-size: 1.5vw;
+    transition: all 0.25s ease-in-out;
+    border: solid 0.1vw;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.button_floor_up_3:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.button_floor_up_1 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 5vw;
+    width: 5vw;
+    top: 19vw;
+    left: 13.7vw;
+    font-size: 1.5vw;
+    transition: all 0.25s ease-in-out;
+    border: solid 0.1vw;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.button_floor_up_1:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.button_floor_0 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 5vw;
+    width: 5vw;
+    top: 24vw;
+    left: 7.2vw;
+    font-size: 1.5vw;
+    transition: all 0.25s ease-in-out;
+    border: solid 0.1vw;
+    border-radius: 1.5vw;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.button_floor_0:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.middleLineOne {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 5vw;
+    height: 0.1vw;
+    top: 26vw;
+    left: 1vw;
+}
+
+.middleLineTwo {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 5vw;
+    height: 0.1vw;
+    top: 27.5vw;
+    left: 1vw;
+}
+
+.middleLineThree {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 5vw;
+    height: 0.1vw;
+    top: 26vw;
+    left: 13.4vw;
+}
+
+.middleLineFour {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 5vw;
+    height: 0.1vw;
+    top: 27.5vw;
+    left: 13.4vw;
+}
+
+.titleContainer h1 {
+    display: table;
+    color: rgb(255, 255, 255);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3vw;
+    margin-top: -4vw;
+    background: rgba(26, 1, 255, 0.65);
+    text-align: center;
+    width: auto;
+    display: inline-block;
+}
