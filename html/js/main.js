@@ -8,7 +8,7 @@ $(function() {
         var item = event.data;
         if (item !== undefined && item.type === "ui") {
             if (item.display) {
-                CurrentPossition = item.current_position;
+                CurrentPossition = item.current_position_z;
                 ShowUI();
             } else {
                 CloseUI(false);
@@ -81,12 +81,10 @@ function CloseUI(post) {
 
 function sendData(data) {
     $.each(JSON.parse(ElevatorsTable), function(tablename, coords) {
-        if (coords.position == CurrentPossition) {
-            document.getElementById(data).style.display = 'none' //to hide
-        }
-        if (tablename == data) {
+        if (tablename == data || tablename == data && coords.position.z != CurrentPossition) {
             $.post(`https://${GetParentResourceName()}/teleport`, JSON.stringify({
-                position: coords.position
+                position: coords.position,
+                heading: coords.heading
             }));
             CloseUI(true);
         }

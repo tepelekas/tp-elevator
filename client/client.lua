@@ -53,7 +53,7 @@ CreateThread(function()
                         SendNUIMessage({
                             type = 'ui',
                             display = true,
-                            current_position = data.position.z,
+                            current_position_z = data.position.z,
                         })
                     end
                 else
